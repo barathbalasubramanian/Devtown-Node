@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="css/login.css">
+<title>Login</title>
+<h1 class="h1">Login</h1>
+
+<form action='/login'method="post">
+    
+    <div class="input">
+      <input class="field" type="email" name="email" required><br>
+      <label class="label">EMAIL</label>
+      <div class="req1"></div>
+    </div>
+
+    <div class="input">
+      <input class='field' type="password" name="password" required><br> 
+      <label class="label">PASSWORD</label>
+      <div class="req2"></div>
+    </div>
+
+    <div class="err">
+      <% if(messages.error) {%>
+        <%= messages.error %>
+      <% } %>
+    </div>
+    
+    <div class="btn">
+      <button type="submit">Login</button>
+      <button><a href="/register">Register</a></button>
+    </div>
+        
+  </form>
+
+</div>
+
+
+
+<script>
+  let h1 = document.querySelector('h1')
+  setInterval(function () {h1.classList.add('start')}, 1000);
+  setInterval(function () {h1.classList.toggle('start')}, 2000);
+</script>

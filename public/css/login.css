@@ -1,0 +1,109 @@
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+  body {
+    background-color: #002233;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    font-family: 'Poppins';
+  }
+  h1 {
+    font-size: 3em;
+    color: #0066FF;
+    letter-spacing: 5px;
+    transition: .75s;
+  }
+  .start {
+    letter-spacing: 10px;
+    transition: .75s;
+  }
+  .err {
+    padding: .35em 0 1.2em 0 ;
+    color: red;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1em;
+    margin: auto;
+    padding: 2em;
+    width: auto;
+    height: fit-content;
+    background-color: #002233;
+    height: 35.25em;
+  }
+  
+   form {
+    display: flex;
+    flex-direction: column;
+  }
+  input{
+    color:white;
+    width: 30em;
+    outline: none;
+    border-radius: 10px;
+    padding: .80em 1.75em;
+    background-color: #002233;
+    border: 1px solid gray;
+  }
+  .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    text-decoration: none;
+    background-color: #0066FF;
+  }
+  button:nth-child(2){
+    background: none;
+    color: #0066FF;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    position: absolute;
+    font-size: .8em;
+    padding: .3em 0 0 .7em;
+    color: gray;
+    margin-left: .5em;
+  }
+  input:focus {
+    border: 1px solid #0066FF;
+  }
+  input:focus ~ label,input:valid ~ label
+  {
+    color: #0066FF;
+    padding: 0 .5em;
+    transform: translateX(10px) translateY(-10px);
+    background-color: #002233;
+    letter-spacing: .1em;
+    transition: .5s;
+    border-left:1px solid #0066FF ;
+    border-right:1px solid #0066FF ;
+  }
+  a{
+    text-decoration: none;
+    color: #0066FF;
+    font-size: 1.4em;
+  }
+ 
+  @media only screen and (max-width:600px) {
+    input {
+      width: 35em;
+    }
+    
+  }

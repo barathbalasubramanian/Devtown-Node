@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="css/register.css" type="text/css">
+<title>Register</title>
+
+<div class="register">
+  <h1 class="h1">Register</h1>
+  <form action='/register'method="post">
+  
+      <div class="input">
+        <input class="field" type="text" name="name" required ><br>
+        <label class="label">USERNAME</label>
+      </div>
+  
+      <div class="input">
+        <input class="field" type="email" name="email" required ><br>
+        <label class="label">EMAIL</label>
+      </div>
+  
+      <div class="input">
+        <input class='field' type="password" name="pass1" required><br> 
+        <label class="label">PASSWORD</label>
+      </div>
+  
+      <div class="input">
+        <input class="field" type="password" name="pass2" required><br>
+        <label class="label">CONFIRM PASSWORD</label>
+      </div>
+  
+      <div class="btn">
+        <button type="submit">Register</button>
+        <button><a href="/">Login</a></button>
+      </div>
+  
+    </form>
+  </div>
+</div>
+
+<script>
+  let h1 = document.querySelector('h1')
+  setInterval(function () {h1.classList.add('start')}, 1000);
+  setInterval(function () {h1.classList.toggle('start')}, 2000);
+</script>
